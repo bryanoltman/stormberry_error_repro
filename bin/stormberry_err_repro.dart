@@ -45,7 +45,7 @@ void main(List<String> arguments) async {
 
   final user = await db.users.queryUser('1');
   print(
-    'user!.posts.first.createdAt: ${user!.posts.first.createdAt} isUTC? ${user!.posts.first.createdAt.isUtc}',
+    'user!.posts.first.createdAt: ${user!.posts.first.createdAt} isUTC? ${user.posts.first.createdAt.isUtc}',
   );
 
   final post = await db.posts.queryPost('1');
