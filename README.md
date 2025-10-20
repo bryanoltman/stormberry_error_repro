@@ -16,7 +16,9 @@ docker run \
     postgres
 ```
 
-After cloning, run `bin/stormberry_err_repro`.
+## Running
+
+`dart run bin/stormberry_err_repro`
 
 Note that all posts are created with the same `createdAt` DateTime. When
 comparing a Post retrieved through a User (i.e., `user.posts.first`) will have a
