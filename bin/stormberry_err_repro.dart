@@ -47,7 +47,7 @@ void main(List<String> arguments) async {
     'user!.posts.first.createdAt: ${user!.posts.first.createdAt} isUTC? ${user.posts.first.createdAt.isUtc}',
   );
 
-  final firstUserPost = user.posts.first;
+  final firstUserPost = user.posts.where((post) => post.id == '1').first;
   final firstPost = await db.posts.queryPost('1');
   print(
     'post!.createdAt: ${firstPost!.createdAt} isUTC? ${firstPost.createdAt.isUtc}',
